@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your URL Shortener Brand Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Screen 1 -->
+    <div class="screen" id="screen1">
+        <h1>Your URL Shortener Brand Name</h1>
+        <p>How this works description</p>
+        <input type="url" id="longUrl" placeholder="Enter Long URL" required>
+        <input type="text" id="customSlug" placeholder="Enter Custom URL">
+        <button onclick="shortenURL()">Shorten it</button>
+    </div>
+
+    <!-- Screen 2 -->
+    <div class="screen" id="screen2" style="display: none;">
+        <h1>Your URL Shortener Brand Name</h1>
+        <p>How this works description</p>
+        <p id="resultLongUrl">Long URL: </p>
+        <p id="resultShortUrl">Shortened URL: </p>
+        <div id="qrCode"></div> <!-- QR code will be inserted here -->
+        <button onclick="enterNewUrl()">Enter Another Long URL</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
